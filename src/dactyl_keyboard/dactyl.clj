@@ -584,20 +584,20 @@
   (translate [10.5 0 0]
              (union
                ;; Index
-              (finger 47 22 20 10.5)
+              (finger 45 25 22 9.55)
                ;; Middle
-              (translate [25.5 0 0] (finger 53.5 29 22 9.2))
+              (translate [25.5 0 0] (finger 50 29 24 9.86))
                ;; Ring
-              (translate [(+ 20 25.5) 0 0] (finger 44 28.5 23 8.25))
+              (translate [(+ 20 25.5) 0 0] (finger 46 26 24 9.23))
                ;; Pinky
-              (translate [(+ 20 25.5 22) 0 0] (finger 30 22.5 20 8.25)))))
+              (translate [(+ 20 25.5 22) 0 0] (finger 31 20 20 8.27)))))
 
 (def palm
   (translate [42.5 0 -40] (union
                            (cube 85 30 80)
                            (rotate (deg2rad 35) [1 0 0]
                                    (translate [(+ 7 (/ -85 2)) -25 25]
-                                              (cylinder 10.5 100))))))
+                                              (cylinder 10.8 95))))))
 
 (def hand
   (union
@@ -1379,7 +1379,7 @@
        (difference trrs-holder trrs-holder-hole)))
 
 (def hand-on-test
-  (translate [-5 -60 92]
+  (translate [-5 -60 108]
              (rotate (deg2rad -27) [1 0 0]
                      (rotate (deg2rad 12) [0 0 1]
                              (rotate (+ tenting-angle (deg2rad 5)) [0 1 0]
